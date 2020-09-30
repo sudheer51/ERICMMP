@@ -12,7 +12,9 @@ import org.testng.annotations.Test;
 
 public class ScheduleAppointmentTests extends TestBaseClass{
 	
-  
+   /**
+    * Adding the testcase for ScheduleAppointment
+    */
 	@Test
 	public void validateAppointmentDetails()
 	{
