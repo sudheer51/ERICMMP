@@ -19,6 +19,7 @@ public class ScheduleAppointmentTests extends TestBaseClass{
 	public void validateAppointmentDetails()
 	{
 		 
+		System.out.println("Property Value is :: " +TestBaseClass.prop.getProperty("tableRowXpath"));
 		HelperClass helperObj = new HelperClass(driver);
 		helperObj.invokeWebApplication("http://96.84.175.78/MMP-Release2-Integrated-Build.6.8.000/portal/login.php");
 		LoginPage lPage = new LoginPage(driver);

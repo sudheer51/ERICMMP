@@ -1,5 +1,7 @@
 package org.iit.mmp.patientmodule.pages;
 import java.util.HashMap;
+
+import org.iit.mmp.base.TestBaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -10,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 public class HomePage {
 	private WebDriver driver;
  
-	By tableRowXpath =By.xpath("//table[@class='table']//tr[1]/td[1]") ;
+	By tableRowXpath =By.xpath(TestBaseClass.prop.getProperty("tableRowXpath")) ;
 	public HomePage(WebDriver driver)
 	{
 		this.driver = driver;
